@@ -1,0 +1,16 @@
+tasks:
+  - data_type: product
+    count: 200
+    workers: 20
+
+  - data_type: backflow_landing_page
+    count: 100
+    workers: 10
+
+  - data_type: backflow_link
+    count: 150
+    workers: 15
+
+  - data_type: old_customer_landing_page
+    count: 80
+    workers: 8

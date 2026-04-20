@@ -1,0 +1,30 @@
+api:
+  base_url: "http://localhost:8080"
+  token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50X2lkIjo4MTc0NzAzNzE5ODc3MTIsImFkdmVydGlzZXJfaWQiOjgxNzQ3MDM3MTk4ODIyNCwib3JnX2lkIjo4MTc0NzAzNzE5ODc5Njh9.wTLAIe3aM3Ey3stjZzBT_-eU1f-BPzlevTjtHyDaXFU"
+  timeout_seconds: 10
+  max_retries: 3
+  retry_backoff_seconds: 0.5
+  connection_pool_size: 100
+  headers:
+    accept: "application/json, text/plain, */*"
+    accept-language: "zh-CN,zh;q=0.9,ja;q=0.8,ru;q=0.7,en;q=0.6"
+    dc-lang: "zh-CN"
+    origin: "https://console-test-deepclick.qiliangjia.one"
+    referer: "https://console-test-deepclick.qiliangjia.one/"
+    user-agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+
+threading:
+  default_workers: 10
+  max_workers: 100
+
+endpoints:
+  product: "https://console-api-test.deepclick.com/api/console/ad/app/create"
+  backflow_landing_page: "/api/v1/backflow/landing-pages"
+  backflow_link: "/api/v1/backflow/links"
+  old_customer_landing_page: "/api/v1/old-customer/landing-pages"
+
+endpoint_labels:
+  product: "新建APK产品接口"
+  backflow_landing_page: "回流落地页接口"
+  backflow_link: "回流链接接口"
+  old_customer_landing_page: "老客落地页接口"
